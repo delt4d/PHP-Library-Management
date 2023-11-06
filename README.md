@@ -39,14 +39,14 @@
   - <img src="https://github.com/zatch73.png" style="width:50px;height:50px;"> Matheus Marchioli de Souza
 
 ### Running Project
--> create file .env using .env.example to exemple (alter APP_NAME, DB_DATABASE) or your prefences.
--> composer update.
--> php artisan key:generate.
--> create database in xampp using name "librarysystem".
-->php artisan migrate.
--> npm install.
--> npm run dev.
--> php artisan serve.
+- create file .env using .env.example to exemple (alter APP_NAME, DB_DATABASE) or your prefences.
+- composer update.
+- php artisan key:generate.
+- create database in xampp using name "librarysystem".
+- php artisan migrate.
+- npm install.
+- npm run dev.
+- php artisan serve.
 
 ### Conventional Commits
 
