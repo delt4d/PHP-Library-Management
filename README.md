@@ -2,11 +2,11 @@
 # Livraria - Gerenciamento de cargos e tarefas do projeto. 🛠️
 ## Tarefas 📋
 - [X] Planejamento com base em um problema real. 
-- [ ] Pagina inicial do sistema(logar) - FrontEnd.
+- [X] Pagina inicial do sistema(logar) - FrontEnd.
 - [ ] Estruturar banco de dados relaciona - Data.
-- [ ] Cadastro de usuário juntamente ao sistema de authenticação - BackEnd.
+- [X] Cadastro de usuário juntamente ao sistema de authenticação - BackEnd.
 - [ ] Página responsável pelo CRUD de usuários - FrontEnd.
-- [ ] Criar gerenciamento de usuários e respectivos acessos - BackEnd.
+- [X] Criar gerenciamento de usuários e respectivos acessos - BackEnd.
 - [ ] Modal resposável pelo gêneros dos livros - FrontEnd.
 - [ ] Criar o gerenciamento dos gêneros dos livros - BackEnd.
 - [ ] Página responsável pelo CRUD de livros - FrontEnd.
