@@ -61,4 +61,4 @@ jobs:
         run: npm i
 
       - name: Run tests
-        run: composer dump-autoload && npm test
+        run: composer dump-autoload && vendor/bin/phpunit tests/
