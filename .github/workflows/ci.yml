@@ -48,7 +48,7 @@ jobs:
         run: php artisan key:generate
 
       - name: Run migrations
-        run: php artisan migrate
+        run: composer dump-autoload && php artisan migrate
 
   build:
     needs: setup
