@@ -8,12 +8,12 @@ echo "LOG_CHANNEL=stack" >> .env
 echo "LOG_DEPRECATIONS_CHANNEL=null" >> .env
 echo "LOG_LEVEL=debug" >> .env
 
-echo "DB_CONNECTION=mysql" >> .env
-echo "DB_HOST=127.0.0.1" >> .env
-echo "DB_PORT=3306" >> .env
-echo "DB_DATABASE=library" >> .env
-echo "DB_USERNAME=root" >> .env
-echo "DB_PASSWORD=root" >> .env
+echo "DB_HOST=" >> .env
+echo "DB_PORT=" >> .env
+echo "DB_USERNAME=" >> .env
+echo "DB_PASSWORD=" >> .env
+echo "DB_CONNECTION=sqlite" >> .env
+echo "DB_DATABASE=:memory:" >> .env
 
 echo "BROADCAST_DRIVER=log" >> .env
 echo "CACHE_DRIVER=file" >> .env
