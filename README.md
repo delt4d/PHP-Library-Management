@@ -46,7 +46,6 @@
 - run `php artisan migrate`.
 - run `npm install`.
 - run `npm run dev`.
-- run `php artisan serve`.
 
 ### Conventional Commits
 
