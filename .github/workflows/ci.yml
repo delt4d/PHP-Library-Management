@@ -61,4 +61,4 @@ jobs:
         run: npm i
 
       - name: Run tests
-        run: npm test
+        run: composer dump-autoload && npm test
