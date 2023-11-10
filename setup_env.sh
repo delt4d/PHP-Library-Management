@@ -9,7 +9,7 @@ echo "LOG_DEPRECATIONS_CHANNEL=null" >> .env
 echo "LOG_LEVEL=debug" >> .env
 
 echo "DB_CONNECTION=mysql" >> .env
-echo "DB_HOST=localhost" >> .env
+echo "DB_HOST=127.0.0.1" >> .env
 echo "DB_PORT=3306" >> .env
 echo "DB_DATABASE=library" >> .env
 echo "DB_USERNAME=root" >> .env
