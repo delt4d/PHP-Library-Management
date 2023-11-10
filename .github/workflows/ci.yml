@@ -18,17 +18,20 @@ jobs:
                 node-version: 14.x
                 cache: 'npm'
 
-            - name: Install dependencies
-              run: npm ci
-
             - name: Configure Composer
               uses: shivammathur/setup-php@v2
               with:
                 php-version: '7.4'
                 composer-version: '2'
 
+            - name: Update Composer
+              run: composer update
+
             - name: Install Composer dependencies
               run: composer install
+
+            - name: Install dependencies
+              run: npm ci
 
             - name: Run tests
               run: npm test
