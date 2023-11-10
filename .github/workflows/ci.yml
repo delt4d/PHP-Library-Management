@@ -65,7 +65,6 @@ jobs:
       - name: Build
         run: npm build
 
-    steps:
       - uses: actions/checkout@v4
 
       - name: Use Node.js
