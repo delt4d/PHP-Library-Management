@@ -15,7 +15,6 @@ jobs:
             env:
               MYSQL_ROOT_PASSWORD: root
               MYSQL_DATABASE: library
-              MYSQL_USER: root
             ports:
               - 3306:3306
             options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
@@ -52,7 +51,7 @@ jobs:
                 echo "DB_PORT=3306" >> .env
                 echo "DB_DATABASE=library" >> .env
                 echo "DB_USERNAME=root" >> .env
-                echo "DB_PASSWORD=" >> .env
+                echo "DB_PASSWORD=root" >> .env
 
 
             - name: Run tests
