@@ -4,8 +4,8 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "release:major": "standard-version --no-verify --release-as major",
-        "release:minor": "standard-version --no-verify --release-as minor",
+        "release:major": "standard-version --release-as major",
+        "release:minor": "standard-version --release-as minor",
         "push": "git push --follow-tags origin $(git rev-parse --abbrev-ref HEAD)"
     },
     "devDependencies": {
