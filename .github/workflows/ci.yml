@@ -30,7 +30,7 @@ jobs:
               run: composer install
 
             - name: Install dependencies
-              run: npm ci
+              run: npm i
 
             - name: Run tests
               run: npm test
