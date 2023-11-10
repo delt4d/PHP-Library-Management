@@ -32,11 +32,11 @@ jobs:
         with:
           php-version: '8.2'
 
-      - name: Update Composer
-        run: composer update
-
       - name: Install Composer dependencies
         run: composer install
+
+      - name: Update Composer
+        run: composer update
 
       - name: Install dependencies
         run: npm i
