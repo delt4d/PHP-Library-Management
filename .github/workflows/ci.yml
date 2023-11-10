@@ -47,13 +47,13 @@ jobs:
               run: npm build
 
             - name: Create .env file
-                run: |
-                  echo "DB_CONNECTION=mysql" >> .env
-                  echo "DB_HOST=localhost" >> .env
-                  echo "DB_PORT=3306" >> .env
-                  echo "DB_DATABASE=library" >> .env
-                  echo "DB_USERNAME=root" >> .env
-                  echo "DB_PASSWORD=root" >> .env
+              run: |
+                echo "DB_CONNECTION=mysql" >> .env
+                echo "DB_HOST=localhost" >> .env
+                echo "DB_PORT=3306" >> .env
+                echo "DB_DATABASE=library" >> .env
+                echo "DB_USERNAME=root" >> .env
+                echo "DB_PASSWORD=root" >> .env
 
 
             - name: Run tests
