@@ -7,8 +7,19 @@ on:
         branches: ['main']
 
 jobs:
-    build:
+    build_and_test:
         runs-on: ubuntu-latest
+        services:
+          mysql:
+            image: mysql:latest
+            env:
+              MYSQL_ROOT_PASSWORD: root
+              MYSQL_DATABASE: library
+              MYSQL_USER: root
+              MYSQL_PASSWORD: root
+            ports:
+              - 3306:3306
+            options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
 
         steps:
             - uses: actions/checkout@v4
@@ -31,6 +42,19 @@ jobs:
 
             - name: Install dependencies
               run: npm i
+
+            - name: Build
+              run: npm build
+
+            - name: Create .env file
+                run: |
+                  echo "DB_CONNECTION=mysql" >> .env
+                  echo "DB_HOST=localhost" >> .env
+                  echo "DB_PORT=3306" >> .env
+                  echo "DB_DATABASE=library" >> .env
+                  echo "DB_USERNAME=root" >> .env
+                  echo "DB_PASSWORD=root" >> .env
+
 
             - name: Run tests
               run: npm test
