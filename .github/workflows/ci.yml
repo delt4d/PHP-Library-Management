@@ -35,8 +35,14 @@ jobs:
       - name: Update Composer
         run: composer update
 
+      - name: Artisan:generate
+        run: php artisan key:generate
+
       - name: Install Composer dependencies
         run: composer install
+
+      - name: Run migrations
+        run: php artisan migrate
 
       - name: Install dependencies
         run: npm i
