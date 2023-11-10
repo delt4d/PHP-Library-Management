@@ -22,7 +22,6 @@ jobs:
               uses: shivammathur/setup-php@v2
               with:
                 php-version: '8.2'
-                composer-version: '2'
 
             - name: Update Composer
               run: composer update
