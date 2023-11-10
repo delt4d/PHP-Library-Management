@@ -44,6 +44,9 @@ jobs:
       - name: Create .env file
         run: chmod +x setup_env.sh && ./setup_env.sh
 
+      - name: Run migrations
+        run: php artisan migrate
+
   build:
     needs: setup
     runs-on: ubuntu-latest
@@ -62,9 +65,6 @@ jobs:
 
       - name: Build
         run: npm build
-
-      - name: Run migrations
-        run: php artisan migrate
 
   test:
     needs: build
