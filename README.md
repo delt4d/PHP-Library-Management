@@ -4,7 +4,7 @@
 - [X] Planejamento com base em um problema real. 
 - [X] Pagina inicial do sistema(logar) - FrontEnd.
 - [ ] Estruturar banco de dados relaciona - Data.
-- [X] Cadastro de usuário juntamente ao sistema de authenticação - BackEnd.
+- [X] Cadastro de usuário juntamente ao sistema de autenticação - BackEnd.
 - [ ] Página responsável pelo CRUD de usuários - FrontEnd.
 - [X] Criar gerenciamento de usuários e respectivos acessos - BackEnd.
 - [ ] Modal resposável pelo gêneros dos livros - FrontEnd.
@@ -39,14 +39,14 @@
   - <img src="https://github.com/zatch73.png" style="width:50px;height:50px;"> Matheus Marchioli de Souza
 
 ### Running Project
-- create file .env using .env.example to exemple (alter APP_NAME, DB_DATABASE) or your prefences.
-- composer update.
-- php artisan key:generate.
-- create database in xampp using name "librarysystem".
-- php artisan migrate.
-- npm install.
-- npm run dev.
-- php artisan serve.
+- create .env file using .env.example, and change it according to your need for example (set APP_NAME or DB_DATABASE).
+- run `composer update`.
+- run `php artisan key:generate`.
+- create database in xampp according to the configuration in your .env file.
+- run `php artisan migrate`.
+- run `npm install`.
+- run `npm run dev`.
+- run `php artisan serve`.
 
 ### Conventional Commits
 
