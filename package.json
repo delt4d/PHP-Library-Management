@@ -4,7 +4,8 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "release": "standard-version --no-verify && git push --follow-tags origin"
+        "release": "standard-version --no-verify",
+        "release:push": "npm run release && git push --follow-tags origin $(git rev-parse --abbrev-ref HEAD)"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
