@@ -41,8 +41,9 @@
 ### Running Project
 - create .env file using .env.example, and change it according to your need for example (set APP_NAME or DB_DATABASE).
 - run `composer update`.
+- create database in xampp according to the configuration in your .env file. 
+- optionally, if you have docker, you can run `npm run services:up` to create a local database with phpmyadmin. The database will run on port 3308, and phpmyadmin on http://localhost:8080/ (username='user' and password='1234'). To stop, you can run `npm run services:stop`.
 - run `php artisan key:generate`.
-- create database in xampp according to the configuration in your .env file.
 - run `php artisan migrate`.
 - run `npm install`.
 - run `npm run dev`.
