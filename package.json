@@ -4,7 +4,9 @@
     "scripts": {
         "dev": "kill-port 8000 && kill-port 5173 && concurrently \"vite\" \"php artisan serve\"",
         "build": "vite build",
-        "test": "php artisan test"
+        "test": "php artisan test",
+        "services:up": "docker compose -f infra/docker-compose.yml up -d --build",
+        "services:stop": "docker compose -f infra/docker-compose.yml stop"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.6",
